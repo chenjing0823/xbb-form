@@ -4,7 +4,7 @@
   ],
   "command": {
     "bootstrap": {
-      "hoist": true
+      "hoist": false
     }
   },
   "version": "0.0.0"

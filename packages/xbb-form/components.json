@@ -1,0 +1,6 @@
+{
+  "XbbForm": "./packages/form-data/index.js",
+  "XbbInput": "./packages/xbb-input/index.js",
+  "XbbSelect": "./packages/xbb-select/index.js"
+
+}

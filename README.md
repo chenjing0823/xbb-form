@@ -5,6 +5,24 @@
 lerna bootstrap
 ```
 
+## play
+本地测试服务
+```sh
+cd play
+npm install
+npm run serve
+```
+
+### 单个包 build
+```sh
+# ./node_modules/.bin/lerna run build --scope @saiyanjing/xbb-form
+lerna run build --scope @saiyanjing/xbb-form
+```
+### 包互相依赖
+```sh
+lerna add @tuya-fe/iot-i18n --scope=@tuya-fe/iot-select-card --peer
+```
+
 ## 发布
 
 ```sh

@@ -1,18 +1,27 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <XbbForm :fieldList="fieldList"></XbbForm>
+    <xbb-input></xbb-input>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import XbbForm from '../../packages/xbb-form/packages/form-data'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    // XbbForm
+  },
+  data () {
+    return {
+      fieldList: [
+        { attr: 'text_1', label: '客户名称', fieldType: 1 },
+        { attr: 'text_2', label: '地址', fieldType: 1 },
+        { attr: 'text_3', label: '是否潜在客户', fieldType: 2, options: [{ value: 1, label: '是' }, { value: 2, label: '否' }] }
+      ]
+    }
+  },
 }
 </script>
 
