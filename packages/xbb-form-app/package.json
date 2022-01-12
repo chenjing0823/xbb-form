@@ -1,0 +1,23 @@
+{
+  "name": "@xbb/xbb-form-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chenjing0823/xbb-form.git"
+  },
+  "bugs": {
+    "url": "https://github.com/chenjing0823/xbb-form/issues"
+  },
+  "keywords": [],
+  "author": "chenjing0823",
+  "license": "MIT",
+  "dependencies": {
+    "cube-ui": "1.12.5",
+    "vue": "2.6.12"
+  }
+}
