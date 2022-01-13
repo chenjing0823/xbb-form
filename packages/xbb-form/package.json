@@ -1,6 +1,6 @@
 {
   "name": "@saiyanjing/xbb-form",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "lib/index.js",
   "files": [
@@ -8,6 +8,7 @@
     "README.md"
   ],
   "scripts": {
+    "deploy": "npm run build && npm publish --access public",
     "build": "cooking build -c build/cooking.conf.js,build/cooking.common.js,build/cooking.component.js"
   },
   "repository": {
