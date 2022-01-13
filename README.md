@@ -20,7 +20,8 @@ lerna run build --scope @saiyanjing/xbb-form
 ```
 ### 包互相依赖
 ```sh
-lerna add @saiyanjing/utils --scope=@saiyanjing/xbb-form --peer
+# lerna add @saiyanjing/xbb-core --scope=@saiyanjing/xbb-form --peer
+lerna add @saiyanjing/xbb-core --scope=@saiyanjing/xbb-form
 ```
 
 ## 发布

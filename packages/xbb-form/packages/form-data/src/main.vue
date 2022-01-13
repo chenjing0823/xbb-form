@@ -3,7 +3,12 @@
   <el-form :label-position="labelPosition" :label-width="labelWidth">
     <el-form-item v-for="field in fieldList" :key="field.attr" :label="field.label">
       <component :is="getComponent(field.fieldType)"
+        mode="form"
         :options="field.options"
+        :field-info="field"
+        :form-data="formData"
+        v-model="formData[field.attr]"
+        @changeFormData="changeFormData"
       >
       </component>
     </el-form-item>
@@ -18,8 +23,6 @@ export default {
   props: {
     fieldList: Array,
 
-    formData: Object,
-
     labelPosition: {
       type: String,
       default: 'left'
@@ -30,7 +33,7 @@ export default {
     }
 
   },
-  mixins: [fieldMixin],
+  mixins: [fieldMixin]
 
 }
 </script>

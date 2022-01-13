@@ -34,9 +34,10 @@ Vue.use(XbbForm)
     data() {
       return {
         fieldList: [
-          { attr: 'text_1', label: '客户名称', fieldType: 1 },
-          { attr: 'text_2', label: '地址', fieldType: 1 },
-          { attr: 'text_3', label: '是否潜在客户', fieldType: 2, options: [{ value: 1, label: '是' }, { value: 2, label: '否' }] }
+          { attr: 'text_1', fieldType: 1, defaultAttr: {}, label: '客户名称' },
+          { attr: 'text_2', fieldType: 1, defaultAttr: { rely: 'text_1' }, label: '地址' },
+          { attr: 'text_3', fieldType: 2, defaultAttr: {}, label: '是否潜在客户', options: [{ value: 1, label: '是' }, { value: 2, label: '否' }] },
+          { attr: 'text_4', fieldType: 1, defaultAttr: { rely: 'text_3' }, label: '关联字段' }
         ]
       }
     }
@@ -48,8 +49,7 @@ Vue.use(XbbForm)
 ```vue
 <template>
   <div>
-    <Xbb-input></Xbb-input>
-    <Xbb-input></Xbb-input>
+    <Xbb-input v-model="value"></Xbb-input>
   </div>
 </template>
 
@@ -57,6 +57,7 @@ Vue.use(XbbForm)
   export default {
     data() {
       return {
+        value: ''
       }
     }
   }

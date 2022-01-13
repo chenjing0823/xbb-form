@@ -22,6 +22,7 @@
   "author": "chenjing0823",
   "license": "MIT",
   "peerDependencies": {
+    "@saiyanjing/xbb-core": "^0.0.0",
     "element-ui": "2.13.0",
     "vue": "2.6.12"
   },
@@ -42,5 +43,7 @@
     "webpack": "^3.8.1",
     "webpack-node-externals": "^1.6.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@saiyanjing/xbb-core": "^0.0.0"
+  }
 }

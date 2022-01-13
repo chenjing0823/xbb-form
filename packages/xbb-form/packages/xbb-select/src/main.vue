@@ -1,6 +1,6 @@
 
 <template>
-  <el-select v-model="value" placeholder="请选择活动区域">
+  <el-select v-model="fieldValue" placeholder="请选择活动区域">
     <el-option
       v-for="item in options"
       :key="item.value"
@@ -11,6 +11,8 @@
 </template>
 
 <script>
+import common from '../../all-mixins/common'
+import defaultVal from '../../all-mixins/default-val'
 export default {
   name: 'XbbSelect',
 
@@ -18,11 +20,7 @@ export default {
     options: Array
   },
 
-  data () {
-    return {
-      value: ''
-    }
-  }
+  mixins: [common, defaultVal]
 
 }
 </script>
