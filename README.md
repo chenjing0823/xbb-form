@@ -20,7 +20,7 @@ lerna run build --scope @saiyanjing/xbb-form
 ```
 ### 包互相依赖
 ```sh
-lerna add @tuya-fe/iot-i18n --scope=@tuya-fe/iot-select-card --peer
+lerna add @saiyanjing/utils --scope=@saiyanjing/xbb-form --peer
 ```
 
 ## 发布
